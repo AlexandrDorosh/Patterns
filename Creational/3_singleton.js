@@ -13,8 +13,8 @@ class ProgrammingLanguage{
     }
 }
 
-const javaScript = new ProgrammingLanguage('JavaScript')
+const javaScript = new ProgrammingLanguage('JavaScript');
 console.log(javaScript.getSingletonData());
 
-const python = new ProgrammingLanguage('Python')
+const python = new ProgrammingLanguage('Python');
 console.log(python.getSingletonData());

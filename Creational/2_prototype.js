@@ -6,19 +6,24 @@ class BMW {
         this.autoTransmission = autoTransmission;
     }
 
-    produce(){
+    clone(){
         return new BMW(this.model, this.price, this.color, this.autoTransmission);
     }
 }
 
 const prototypeCar = new BMW('X6', 80000, 'white', false);
 
-const car1 = prototypeCar.produce();
-const car2 = prototypeCar.produce();
-const car3 = prototypeCar.produce();
+const car1 = prototypeCar.clone();
+const car2 = prototypeCar.clone();
+const car3 = prototypeCar.clone();
 
 car1.color = 'black';
 car1.autoTransmission = true;
+
+car2.color = 'white';
+
+car3.color = 'red';
+car3.autoTransmission = true;
 
 console.log(car1);
 console.log(car2);
