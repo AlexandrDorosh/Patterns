@@ -10,17 +10,19 @@ function familyCarFactory(){
     return new I3();
 }
 
-class Z4 {
+class Z4 extends Car {
     info(){
         return 'Z4 is a Sport car!';
     }
 }
 
-class X {
+class X extends Car {
     info(){
         return 'I3 is a Family car!';
     }
 }
+
+
 
 const produce = bmwProducer('sport');
 
